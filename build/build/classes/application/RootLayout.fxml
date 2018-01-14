@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="750.0" minWidth="850.0" prefHeight="750.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utils.Controller">
+   <children>
+      <Button layoutX="548.0" layoutY="128.0" mnemonicParsing="false" onAction="#runEditor" prefHeight="32.0" prefWidth="198.0" text="Редактиовать реестры" />
+      <TextField alignment="CENTER" layoutX="21.0" layoutY="21.0" prefHeight="31.0" prefWidth="753.0" text="Редактирование реестров" />
+      <TextField fx:id="txtField2" alignment="CENTER" layoutX="20.0" layoutY="181.0" prefHeight="31.0" prefWidth="753.0" text="Печать" />
+      <TextField alignment="CENTER" layoutX="20.0" layoutY="454.0" prefHeight="31.0" prefWidth="753.0" text="Выборка счетов по запросу" />
+      <Button layoutX="475.0" layoutY="375.0" mnemonicParsing="false" onAction="#startPrinting" prefHeight="31.0" prefWidth="198.0" text="Отправить на печать" />
+      <ProgressIndicator fx:id="editProg" layoutX="706.0" layoutY="68.0" progress="0.0" />
+      <Separator layoutX="21.0" layoutY="170.0" prefWidth="753.0" />
+      <Separator layoutX="14.0" layoutY="438.0" prefWidth="753.0" />
+      <ProgressIndicator fx:id="headerProg" layoutX="731.0" layoutY="375.0" progress="0.0" />
+      <Button fx:id="btnR" layoutX="548.0" layoutY="63.0" mnemonicParsing="false" onAction="#chooseFolder" text="Выбрать папку" />
+      <TextField fx:id="txtField1" layoutX="21.0" layoutY="63.0" prefHeight="31.0" prefWidth="515.0" text="C:\" />
+      <TextArea fx:id="filesList" layoutX="21.0" layoutY="218.0" prefHeight="149.0" prefWidth="439.0" />
+      <Button layoutX="262.0" layoutY="375.0" mnemonicParsing="false" onAction="#filesChooser" prefHeight="31.0" prefWidth="198.0" text="Выбрать файлы" />
+      <TextField fx:id="psHeader" layoutX="475.0" layoutY="218.0" prefHeight="31.0" prefWidth="296.0" text="Заголовок" />
+      <Button layoutX="598.0" layoutY="256.0" mnemonicParsing="false" onAction="#chooseHeader" prefHeight="31.0" prefWidth="172.0" text="Выбрать заголовок" />
+      <Button fx:id="choosePrinter" layoutX="598.0" layoutY="336.0" mnemonicParsing="false" onAction="#chooseFolder" prefHeight="31.0" prefWidth="172.0" text="Выбрать принтер" />
+      <TextField fx:id="printer" layoutX="475.0" layoutY="296.0" prefHeight="31.0" prefWidth="296.0" text="C:\" />
+      <TextField fx:id="folder" layoutX="21.0" layoutY="506.0" prefHeight="31.0" prefWidth="331.0" text="Папка" />
+      <Button fx:id="chsFolder" layoutX="21.0" layoutY="551.0" mnemonicParsing="false" onAction="#chooseFolder" prefHeight="31.0" prefWidth="206.0" text="Выбрать папку" />
+      <TextField fx:id="unc" layoutX="21.0" layoutY="611.0" onInputMethodTextChanged="#chooseUNC" onKeyTyped="#chooseUNC" prefHeight="31.0" prefWidth="331.0" text="Номер клиента" />
+      <Button fx:id="chsFile" layoutX="21.0" layoutY="651.0" mnemonicParsing="false" onAction="#chooseUNC" prefHeight="31.0" prefWidth="206.0" text="Выбрать файл" />
+      <ProgressIndicator fx:id="findIndicator" layoutX="713.0" layoutY="601.0" progress="0.0" />
+      <Button layoutX="483.0" layoutY="596.0" mnemonicParsing="false" onAction="#makeSample" prefHeight="31.0" prefWidth="215.0" text="Выбрать клиентов" />
+      <Label fx:id="label" layoutX="364.0" layoutY="506.0" prefHeight="31.0" prefWidth="409.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

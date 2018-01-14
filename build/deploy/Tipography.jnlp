@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Tipography.jnlp">
+  <information>
+    <title>Tipography</title>
+    <vendor>Pavel</vendor>
+    <description>Typography</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Tipography.jar" size="9459" download="eager" />
+    <jar href="libs\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="libs\poi-3.16.jar" size="2679259" download="eager" />
+    <jar href="libs\poi-examples-3.16.jar" size="369786" download="eager" />
+    <jar href="libs\poi-excelant-3.16.jar" size="31218" download="eager" />
+    <jar href="libs\poi-ooxml-3.16.jar" size="1433719" download="eager" />
+    <jar href="libs\poi-ooxml-schemas-3.16.jar" size="5871746" download="eager" />
+    <jar href="libs\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="application.Main"  name="Typography" />
+  <update check="background"/>
+</jnlp>
